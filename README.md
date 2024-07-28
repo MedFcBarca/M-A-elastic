@@ -12,12 +12,14 @@ Installation
 Clonez le dépôt :
 
 -npm install express supertest jest
+- installer Elasticsearch, Kibana et Logstash installés et configurés (J'ai pas pu ajouter les dossiers des installations git résusé...)
+-npm install eslint --save-dev
+-npx eslint --init
+
 -Exécuter l'application:
 node index.js
 
--Tester l'application avec curl
-
-
+-Tester l'application avec curl:
 curl -X POST http://localhost:3000/add -H "Content-Type: application/json" -d '{"a": 5, "b": 3}'
 
 Étape 2 : Écrire des logs applicatifs dans un fichier local
